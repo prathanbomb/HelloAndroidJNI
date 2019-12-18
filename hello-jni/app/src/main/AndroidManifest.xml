@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.example.hellojni"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="th.co.digio.hellojni"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="3" />
+
     <application android:label="@string/app_name"
-                 android:debuggable="true">
-        <activity android:name=".HelloJni"
+        android:debuggable="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,HardcodedDebugMode,MissingApplicationIcon">
+        <activity
+            android:name="th.co.digio.HelloJni"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
